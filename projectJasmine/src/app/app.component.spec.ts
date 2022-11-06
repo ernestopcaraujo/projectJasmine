@@ -32,4 +32,10 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('projectJasmine app is running!');
   });
+  it('should test toBe matcher', () => {
+    var carro = {marca:"GM"};
+    var van = {marca:"GM"}
+    expect(carro).not.toBe(van);
+  });
+
 });
