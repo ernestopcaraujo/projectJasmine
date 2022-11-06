@@ -8,3 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'projectJasmine';
 }
+
+
+function testeRetorno(x:number, y:number){
+  // x = 15;
+  // y = 10;
+  if(x<y){
+    return true
+  }
+  else return false
+}
+console.log(testeRetorno(15,10));
+
