@@ -55,6 +55,16 @@ describe('AppComponent', () => {
     expect(expressao).toMatch(/Jonh Easton/);
   });
 
+  it('should test toBeUndefined matcher', () => {
+    let expressao;
+    expect(expressao).toBeUndefined();
+  });
+
+  it('should test toBeUndefined matcher', () => {
+    let expressao = 'texto'
+    expect(expressao).toBeDefined();
+  });
+
 
 });
 
