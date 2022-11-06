@@ -39,15 +39,20 @@ describe('AppComponent', () => {
   });
 
   it('should test toEqual matcher', () => {
-    let carroErnesto = "Clio"
-    let carroFelipe = "CRV"
+    let carroErnesto = "Mercedes GLA"
+    let carroFelipe = "Mercedes GLA"
     expect(carroErnesto).toEqual(carroFelipe);
   });
 
-  it('should test and fail toEqual matcher', () => {
-    let carroErnesto = "Lancer"
-    let carroFelipe = "Mercedes GLA"
-    expect(carroErnesto).toEqual(carroFelipe);
+  // it('should test and fail toEqual matcher', () => {
+  //   let carroErnesto = "Lancer"
+  //   let carroFelipe = "Mercedes GLA"
+  //   expect(carroErnesto).toEqual(carroFelipe);
+  // });
+
+  it('should test toMatch matcher', () => {
+    let expressao = 'Lancer EVO Jonh Easton'
+    expect(expressao).toMatch(/Jonh Easton/);
   });
 
 
