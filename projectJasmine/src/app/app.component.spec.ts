@@ -38,4 +38,18 @@ describe('AppComponent', () => {
     expect(carro).not.toBe(van);
   });
 
+  it('should test toEqual matcher', () => {
+    let carroErnesto = "Clio"
+    let carroFelipe = "CRV"
+    expect(carroErnesto).toEqual(carroFelipe);
+  });
+
+  it('should test and fail toEqual matcher', () => {
+    let carroErnesto = "Lancer"
+    let carroFelipe = "Mercedes GLA"
+    expect(carroErnesto).toEqual(carroFelipe);
+  });
+
+
 });
+
