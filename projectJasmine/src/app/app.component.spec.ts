@@ -84,6 +84,11 @@ describe('AppComponent', () => {
     expect(valor).toBeFalse();
   });
 
+  it('should test toContain matcher', () => {
+    const umArray = ['McLaren', 'Ferrari', 'Ligier', 'Fittipaldi']
+    expect(umArray).toContain('Fittipaldi');
+  });
+
 
 
 });
