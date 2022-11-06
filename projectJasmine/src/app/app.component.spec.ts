@@ -66,8 +66,6 @@ describe('AppComponent', () => {
   });
 
   function testeRetorno(x:number, y:number){
-    // x = 15;
-    // y = 10;
     if(x<y){
       return true
     }
@@ -87,6 +85,25 @@ describe('AppComponent', () => {
   it('should test toContain matcher', () => {
     const umArray = ['McLaren', 'Ferrari', 'Ligier', 'Fittipaldi']
     expect(umArray).toContain('Fittipaldi');
+  });
+
+  function testeMaiorMenor(x:number, y:number){
+    if(x<y){
+      return true
+    }
+    else return false
+  }
+
+  it('should test toBeGreaterThan matcher', () => {
+    let a = 7
+    let b = 14
+    expect(b).toBeGreaterThan(a);
+  });
+
+  it('should test toBeGreaterThan matcher', () => {
+    let a = 7
+    let b = 14
+    expect(a).toBeLessThan(b);
   });
 
 
