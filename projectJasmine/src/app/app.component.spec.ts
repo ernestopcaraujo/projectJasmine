@@ -65,6 +65,26 @@ describe('AppComponent', () => {
     expect(expressao).toBeDefined();
   });
 
+  function testeRetorno(x:number, y:number){
+    // x = 15;
+    // y = 10;
+    if(x<y){
+      return true
+    }
+    else return false
+  }
+
+  it('should test toBeTruthy matcher', () => {
+    let valor = true
+    expect(testeRetorno(5,10)).toBeTruthy();
+  });
+
+  it('should test toBeFalse matcher', () => {
+    let valor = false
+    expect(valor).toBeFalse();
+  });
+
+
 
 });
 
