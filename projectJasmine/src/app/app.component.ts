@@ -1,3 +1,4 @@
+import { ReturnStatement } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,13 +11,9 @@ export class AppComponent {
 }
 
 
-function testeRetorno(x:number, y:number){
-  // x = 15;
-  // y = 10;
-  if(x<y){
-    return true
-  }
-  else return false
+function soma(a:number,b:number){
+
+  return a+b
+
 }
-console.log(testeRetorno(15,10));
 

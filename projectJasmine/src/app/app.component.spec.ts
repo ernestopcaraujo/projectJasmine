@@ -106,7 +106,4 @@ describe('AppComponent', () => {
     expect(a).toBeLessThan(b);
   });
 
-
-
 });
-
